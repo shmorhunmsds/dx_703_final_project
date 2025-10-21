@@ -86,12 +86,79 @@ Open [Milestone_01.ipynb](Milestone_01.ipynb) to begin with exploratory data ana
 
 ## Milestones
 
-### Milestone 1: EDA and Problem Framing (Due: October 26)
-- Form team and complete team contract
-- Select dataset (Food-101 or HuffPost)
-- Perform exploratory data analysis
-- Identify challenges and propose solutions
-- Define evaluation metrics
+### Milestone 1: EDA and Problem Framing (Due: October 26, midnight + 2hr grace period)
+**Worth 25 points | No late submissions accepted**
+
+#### Checklist
+
+**Pre-Work (Due: Sunday, October 19 - already passed!)**
+- [ ] Complete Team Contract in Homework Repository
+- [ ] All team members review and sign contract
+- [ ] Submit contract with Homework 07
+
+**Team Setup**
+- [ ] Choose team leader/Gradescope submitter
+- [ ] Set up collaboration workflow (Git branching, communication tools)
+- [ ] Ensure all members can run the notebook and load datasets
+
+**Dataset Exploration**
+- [ ] Load both datasets (Food-101 and HuffPost)
+- [ ] Run all template code cells for both datasets
+- [ ] View sample images/text from both datasets
+- [ ] Discuss as team: which dataset is more interesting?
+- [ ] **DECIDE:** Choose one dataset for the entire project
+- [ ] **DELETE:** Remove template code for the unchosen dataset
+
+**Problem 1: Exploratory Data Analysis (10 points)**
+- [ ] Verify total samples and number of classes
+- [ ] Check class distribution (plot label frequencies)
+- [ ] Identify class imbalance (if any)
+- [ ] Look for missing/empty/inconsistent data
+- [ ] Check for duplicate or near-duplicate entries
+- [ ] Identify overlapping or ambiguous class labels
+- [ ] **For Images:** Analyze image sizes, lighting variation, color balance
+- [ ] **For Text:** Calculate text length statistics, check vocabulary size
+- [ ] Create visualizations (class distribution plots, sample grids, etc.)
+- [ ] Answer all 5 graded questions (2 pts each):
+  - [ ] 1.1: Dataset summary
+  - [ ] 1.2: Initial observations
+  - [ ] 1.3: Challenges & implications
+  - [ ] 1.4: Preparation ideas
+  - [ ] 1.5: Reflection on dataset choice
+
+**Problem 2: Frame the Problem (15 points)**
+- [ ] Diagnose key challenges:
+  - [ ] Class imbalance (calculate max/median ratio)
+  - [ ] Length/size variance (calculate percentiles)
+  - [ ] Noise/duplicates/data quality issues
+  - [ ] Ambiguous/overlapping labels (identify 2-3 examples)
+  - [ ] Compute constraints (note RAM/GPU limitations)
+- [ ] Map each challenge to a solution:
+  - [ ] Imbalance → class weights or oversampling strategy
+  - [ ] Length/size → choose target dimensions/max_length
+  - [ ] Noise → deduplication and cleaning plan
+  - [ ] Ambiguity → label merging or feature enhancement plan
+  - [ ] Overfitting → regularization strategy (dropout, early stopping)
+- [ ] Define evaluation approach:
+  - [ ] Choose primary metric (accuracy vs macro-F1)
+  - [ ] Choose secondary metrics (per-class precision/recall, confusion matrix)
+  - [ ] Define train/val/test split strategy (stratified 70/15/15 or 80/10/10)
+- [ ] Answer all 5 graded questions (3 pts each):
+  - [ ] 2.1: State the prediction task
+  - [ ] 2.2: Define inputs and outputs
+  - [ ] 2.3: Identify possible challenges
+  - [ ] 2.4: Propose data preparation solutions
+  - [ ] 2.5: Specify success metrics
+- [ ] Answer final AI usage question
+
+**Final Submission Prep**
+- [ ] Clear all notebook outputs: `jupyter nbconvert --clear-output --inplace Milestone_01.ipynb`
+- [ ] Re-run entire notebook from top to bottom (ensure reproducibility)
+- [ ] Check that all code cells execute without errors
+- [ ] Verify all questions are answered completely
+- [ ] Verify only ONE dataset section remains (other deleted)
+- [ ] Review notebook as a team
+- [ ] **Team leader submits to Gradescope by October 26, midnight**
 
 ### Milestone 2: Model Development (TBD)
 - Build baseline model
