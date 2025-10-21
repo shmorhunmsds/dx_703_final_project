@@ -9,9 +9,9 @@ This repository contains our team's final project for DX 703, focusing on **mult
 
 ## Team Members
 
-- [Team Member 1 - Name]
-- [Team Member 2 - Name]
-- [Team Member 3 - Name]
+- [Team Member 1 - August Siu]
+- [Team Member 2 - Peter Shmorhun]
+- [Team Member 3 - Emma Stiller]
 
 ## Project Structure
 
