@@ -18,13 +18,38 @@ This repository contains our team's final project for DX 703, focusing on **mult
 ```
 dx_703_final_project/
 ├── Milestone_01.ipynb          # Initial EDA and dataset selection
-├── Milestone_02.ipynb          # Model development (coming soon)
-├── Milestone_03.ipynb          # Final evaluation (coming soon)
-├── data/                       # Dataset storage (gitignored)
-├── models/                     # Trained model checkpoints (gitignored)
+├── Milestone_02.ipynb          # Model development and training
 ├── README.md                   # This file
-└── requirements.txt            # Python dependencies (to be added)
+├── requirements.txt            # Python dependencies
+│
+├── data/                       # Preprocessed data artifacts
+│   ├── label_encoder.pkl       # Label encoder for categories
+│   ├── class_weights.npy       # Computed class weights
+│   └── *.csv                   # Analysis statistics
+│
+├── models/                     # Saved model checkpoints
+│   ├── best_custom_model_fast.keras  # Fast CNN model (48MB)
+│   └── best_model.keras              # Baseline model (45MB)
+│
+├── scripts/                    # Helper scripts and experiments
+│   ├── experiments/            # Model experiments and iterations
+│   └── utils/                  # Utility functions and tools
+│
+├── docs/                       # Documentation and notes
+│   ├── notes/                  # Development notes and guides
+│   └── analysis/               # Analysis reports and diagnostics
+│
+├── figures/                    # Visualizations and plots
+│   ├── milestone1/             # EDA visualizations
+│   └── milestone2/             # Training/evaluation plots
+│
+└── huffpost_processed_milestone2/  # Preprocessed HuffPost dataset
+    ├── train/                  # Training split (140,255 samples)
+    ├── validation/             # Validation split (30,055 samples)
+    └── test/                   # Test split (30,055 samples)
 ```
+
+Each subdirectory contains its own `README.md` with detailed information.
 
 ## Getting Started
 
