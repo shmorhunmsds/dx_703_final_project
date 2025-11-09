@@ -37,13 +37,12 @@ ipython_config.py
 # Machine Learning / Data Science
 *.h5
 *.hdf5
-*.pkl
-*.pickle
 *.joblib
 *.pt
 *.pth
 *.ckpt
 *.safetensors
+*.keras
 models/
 checkpoints/
 logs/
