@@ -49,6 +49,10 @@ logs/
 runs/
 tensorboard/
 wandb/
+best_distilbert_final/
+best_distilbert_model/
+best_roberta_model/
+huffpost_processed_milestone2/
 
 # Datasets (large files - consider using Git LFS or external storage)
 data/
@@ -56,11 +60,17 @@ datasets/
 *.csv
 *.tsv
 *.json
-*.parquet
-*.arrow
 *.feather
 food101_splits/
 huffpost_splits/
+
+# Include processed datasets and augmented data for reproducibility
+# (back-translation is computationally expensive)
+!train_augmented_backtrans.parquet
+!huffpost_final_processed/
+!huffpost_final_processed/**
+!label_encoder.pkl
+!class_weights.npy
 
 # Model outputs
 outputs/
